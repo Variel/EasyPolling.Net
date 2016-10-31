@@ -5,10 +5,8 @@ using System.Threading.Tasks;
 
 namespace EasyPolling.Net
 {
-    public class Class1
+    public class ConnectionPool
     {
-        public Class1()
-        {
-        }
+        public Lazy<List<PollingConnection>> Connections = new Lazy<List<PollingConnection>>();
     }
 }
